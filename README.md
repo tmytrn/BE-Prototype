@@ -1,8 +1,8 @@
 # PA-Prototype
 
-Playground for prototyping new PA features.
+Playground for prototyping new BE features.
 
-How to Build
+How to Run
 
 ``` npm install ```
 

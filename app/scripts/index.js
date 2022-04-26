@@ -76,21 +76,20 @@ function dotRadius() {
 
   var sizes = [28, 36, 48, 64, 81, 128];
 
-  if (window.innerWidth <= 600) {
   if (window.innerWidth <= 380) {
     index = 0;
   } else if (window.innerWidth > 300 && window.innerWidth <= 600) {
     index = 1;
   } else if (window.innerWidth > 600 && window.innerWidth <= 1023) {
-    index = 1;
-  } else if (window.innerWidth > 1023 && window.innerWidth <= 1270) {
     index = 2;
+  } else if (window.innerWidth > 1023 && window.innerWidth <= 1270) {
+    index = 3;
   } else if (window.innerWidth > 1270 && window.innerWidth <= 1920) {
-    index = 3;
-  } else if (window.innerWidth > 1920 && window.innerWidth <= 2560) {
-    index = 3;
-  } else if (window.innerWidth > 2560) {
     index = 4;
+  } else if (window.innerWidth > 1920 && window.innerWidth <= 2560) {
+    index = 4;
+  } else if (window.innerWidth > 2560) {
+    index = 5;
   }
 
   return sizes[index];
